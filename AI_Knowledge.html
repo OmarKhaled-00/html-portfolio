@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Knowledge - Omar Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0f0f0f;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      color: #00ffff;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .ai-section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInLeft 2s ease;
+    }
+
+    .ai-section h2 {
+      font-size: 48px;
+      color: #00ffff;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .ai-content {
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      border-left: 5px solid #00ffff;
+      font-size: 18px;
+      line-height: 1.7;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    @keyframes shineGlow {
+      0% { box-shadow: 0 0 5px #00ffff; }
+      50% { box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+      100% { box-shadow: 0 0 5px #00ffff; }
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="floating">Port<span style="color:white;"><small>folio</small></span></h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUTME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="Certification.html">CERTIFICATIONS</a>
+      <a href="AI_Knowledge.html">AI KNOWLEDGE</a>
+      <a href="Languages.html">LANGUAGES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="ai-section">
+    <h2 class="floating">AI Knowledge</h2>
+
+    <div class="ai-content">
+      <p>
+        I have practical experience working with Artificial Intelligence and Chatbots, integrating them effectively into my daily workflow. 
+        I use AI tools such as ChatGPT and others to enhance productivity, support decision-making, write and debug code, generate technical documentation, and optimize embedded systems tasks.
+      </p>
+      <p>
+        I believe AI is not just a tool but a required skill for engineers and developers in today's fast-evolving technological world. 
+        Embracing and mastering AI tools is becoming essential for innovation, efficiency, and remaining competitive in the field.
+      </p>
+    </div>
+  </section>
+
+</body>
+</html>

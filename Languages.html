@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Languages - Omar Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0f0f0f;
+      border-bottom: 1px solid #222;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header h1 {
+      color: #00ffff;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .language-section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInLeft 2s ease;
+    }
+
+    .language-section h2 {
+      font-size: 48px;
+      color: #00ffff;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .language {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #00ffff;
+      margin-bottom: 20px;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    .language h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #00ffff;
+    }
+
+    .language p {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .language a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .language a:hover {
+      color: #00ffff;
+    }
+
+    @keyframes shineGlow {
+      0% { box-shadow: 0 0 5px #00ffff; }
+      50% { box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+      100% { box-shadow: 0 0 5px #00ffff; }
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="floating">Port<span style="color:white;"><small>folio</small></span></h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUTME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="Certification.html">CERTIFICATIONS</a>
+      <a href="AI_Knowledge.html">AI KNOWLEDGE</a>
+      <a href="Languages.html">LANGUAGES</a>
+      <a href="contact.html">CONTACT</a>
+      
+    </nav>
+  </header>
+
+  <section class="language-section">
+    <h2 class="floating">Language Proficiency</h2>
+
+    <div class="language">
+      <h3><i class="fas fa-language"></i> English - B2 Level</h3>
+      <p>Good command of spoken and written English. Practiced in professional and technical settings.</p>
+      <p><i class="fas fa-video"></i> <a href="https://drive.google.com/file/d/1qxfQwxpkhHZ1kj-oJ5Lgbv5JS9UbwcR3/view?usp=sharing" target="_blank">Business English Exam (NTI)</a></p>
+      <p><i class="fas fa-user-circle"></i> <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_embeddedsystems-engineeringjourney-linkedinvideo-activity-7262900486842830848-lGQW" target="_blank">Introduction Video (LinkedIn)</a></p>
+    </div>
+
+    <div class="language">
+      <h3><i class="fas fa-language"></i> German - A2 Level</h3>
+      <p>Basic understanding and communication. Able to understand everyday phrases and simple instructions.</p>
+    </div>
+
+    <div class="language">
+      <h3><i class="fas fa-language"></i> Arabic - Native</h3>
+      <p>Fluent in reading, writing, and speaking. Native-level proficiency.</p>
+    </div>
+  </section>
+
+</body>
+</html>

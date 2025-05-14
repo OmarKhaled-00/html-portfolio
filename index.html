@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Omar Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0f0f0f;
+      border-bottom: 1px solid #222;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header h1 {
+      color: #00ffff;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 40px;
+    }
+
+    .hero-text {
+      max-width: 600px;
+      animation: fadeInLeft 2.5s ease;
+    }
+
+    .hero-text h2 {
+      font-size: 28px;
+    }
+
+    .hero-text h1 {
+      font-size: 80px;
+      color: #00ffff;
+      text-align: center;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    .socials {
+      margin: 20px 0;
+    }
+
+    .socials a {
+      margin-right: 15px;
+      color: #00ffff;
+      font-size: 24px;
+      text-decoration: none;
+      transition: transform 0.9s;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    .socials a:hover {
+      transform: scale(1.2);
+      color: white;
+    }
+
+    .icon-bounce {
+      animation: bounce 2s infinite;
+    }
+
+    
+    .cv-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #00ffff;
+      color: #f5fafa;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+       animation: shineGlow 3s infinite alternate;
+    }
+
+    .cv-button:hover {
+      background-color: #00ffff;
+      color: #0f0f0f;
+    }
+
+    .hero-img img {
+      width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #00ffff;
+        animation: shineGlow 3s infinite alternate;
+    }
+      @keyframes bounce {
+          0%, 100%   { transform: translateY(0); }
+          50%        { transform: translateY(-15px); }
+    }
+    .floating {
+     animation: float 3s ease-in-out infinite;
+    }
+
+     @keyframes float {
+          0%   { transform: translateY(0); }
+          50%  { transform: translateY(-10px); }
+          100% { transform: translateY(0); }
+    }
+
+    @keyframes shineGlow {
+  0% {
+    box-shadow: 0 0 5px #00ffff;
+  }
+  50% {
+    box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+  }
+  100% {
+    box-shadow: 0 0 5px #00ffff;
+  }
+}
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="floating">Port<span style="color:white;"><small>folio</small></span></h1>
+    <nav>
+      <a href="">HOME</a>
+      <a href="about.html" >ABOUTME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="Certification.html">CERTIFICATIONS</a>
+      <a href="AI_Knowledge.html">AI KNOWLEDGE</a>
+      <a href="Languages.html">LANGUAGES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2 class="floating">Hello, my name is</h2>
+      <h1 class="floating"><span style="color: #ccc;"> Omar</span> Khaled</h1>
+      <p class="floating"> <b>I'm a</b> <span style="color:#00ffff;">Mechatronics Engineer</span></p>
+      <p class="floating"> <b>Specialized</b> <span style="color:#00ffff;">in Embedded systems Engineering</span> </p>
+      <p class="floating"><span style="color: #51b477;""><b>Full Stack Web Developer Soon</b></span></p>
+      <div class="socials">
+        <a href="mailto:ok8086143@gmail.com"  target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/Unvisable" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/omar-khaled-4a85aa271/"  target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/201011281789"  target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+      <a href="./ResumeOmar.pdf" class="cv-button">DOWNLOAD CV</a>
+    </div>
+      
+    <div  class="hero-img">
+      <img src="yourphoto.jpg" alt="Omar Khaled">
+    </div>
+   
+  </section>
+ <footer style="background-color: #0f0f0f; color: #ccc; padding: 20px 40px; text-align: center; border-top: 1px solid #222;">
+  <p>&copy; 2025 Omar Khaled. All rights reserved.</p>
+  
+</footer>
+
+
+</body>
+</html>
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Certifications - Omar Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0f0f0f;
+      border-bottom: 1px solid #222;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header h1 {
+      color: #00ffff;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .certification-section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInLeft 2s ease;
+    }
+
+    .certification-section h2 {
+      font-size: 48px;
+      color: #00ffff;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .certification-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .certification-item {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #00ffff;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    .certification-item a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .certification-item a:hover {
+      color: #00ffff;
+    }
+
+    .certification-item i {
+      margin-right: 10px;
+      color: #00ffff;
+    }
+
+    @keyframes shineGlow {
+      0% { box-shadow: 0 0 5px #00ffff; }
+      50% { box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+      100% { box-shadow: 0 0 5px #00ffff; }
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-50px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="floating">Port<span style="color:white;"><small>folio</small></span></h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html" >ABOUTME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="Certification.html">CERTIFICATIONS</a>
+      <a href="AI_Knowledge.html">AI KNOWLEDGE</a>
+      <a href="Languages.html">LANGUAGES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="certification-section">
+    <h2 class="floating">My Certifications</h2>
+    <div class="certification-list">
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/1FMEYahwIp_AiRcMx7ARqL7KFrz26OoGS/view?usp=sharing" target="_blank">Robotics Certificate</a></div>
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/1Xl2alN73GSuyPbxj8AvVSTjYI4tqePvz/view?usp=sharing" target="_blank">MATLAB Training Certificate</a></div>
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/1a7WHzwnMApppwMNQWSDCxjHryTsZm6Cr/view?usp=sharing" target="_blank">MATLAB Onramp Certificate</a></div>
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/1xB1jtz9OTE8EjeH85s_oIro9KgjSAjMp/view?usp=sharing" target="_blank">Judge Qualification Certificate</a></div>
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/1DbcY8kM6eh1aYCdNa0OAgDCOimYPyqWK/view?usp=sharing" target="_blank">IoT at ITI Certificate</a></div>
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/1ulejeJbAdsQTSfLW5wbaCsUOUoAHXvrX/view?usp=sharing" target="_blank">Introduction to Python Certificate</a></div>
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/1l7iiqv4gc3wPkVxtByN79y2dt0L6MxIJ/view?usp=sharing" target="_blank">Image Processing Certificate</a></div>
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/1RXDw7cZ5-CkpmQnO-BBkOJzirTkDuIw-/view?usp=sharing" target="_blank">HTML & CSS Certificate</a></div>
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/164aVuI8MdqqwTNHODc0GqVVC7TDyataA/view?usp=sharing" target="_blank">Career Development Certificate</a></div>
+      <div class="certification-item"><i class="fas fa-certificate"></i><a href="https://drive.google.com/file/d/1CKDmWbUonX5CS5QmOVNTJSKZN85XJU3E/view?usp=sharing" target="_blank">Basic Embedded Systems Certificate</a></div>
+    </div>
+  </section>
+
+</body>
+</html>

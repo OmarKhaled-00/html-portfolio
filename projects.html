@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects - Omar Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0f0f0f;
+      border-bottom: 1px solid #222;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header h1 {
+      color: #00ffff;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .projects-section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeInLeft 2s ease;
+      
+    }
+
+    .projects-section h2 {
+      font-size: 48px;
+      color: #00ffff;
+      margin-bottom: 40px;
+      text-align: center;
+      
+    }
+
+    .project-item {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 5px solid #00ffff;
+      margin-bottom: 30px;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    .project-item h3 {
+      font-size: 24px;
+      color: #00ffff;
+      
+    }
+
+    .project-item p {
+      font-size: 18px;
+      color: #aaa;
+      
+    }
+
+    .project-item a {
+      color: #354e4e;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s ease;
+      
+    }
+
+    .project-item a:hover {
+      color: #00ccff;
+    }
+
+    .project-item strong{
+        color:#00ffff;
+    }
+
+     .floating {
+     animation: float 3s ease-in-out infinite;
+    }
+
+     @keyframes float {
+          0%   { transform: translateY(0); }
+          50%  { transform: translateY(-10px); }
+          100% { transform: translateY(0); }
+    }
+
+    @keyframes shineGlow {
+      0% {
+        box-shadow: 0 0 5px #00ffff;
+      }
+      50% {
+        box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+      }
+      100% {
+        box-shadow: 0 0 5px #00ffff;
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="floating">Port<span style="color:white;"><small>folio</small></span></h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html" >ABOUTME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="Certification.html">CERTIFICATIONS</a>
+      <a href="AI_Knowledge.html">AI KNOWLEDGE</a>
+      <a href="Languages.html">LANGUAGES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+    <h2 class="floating">My Projects</h2>
+    <div class="project-item">
+  <h3>Graduation Project: Advancing Healthcare – A Comprehensive Smart Hospital System Integration</h3>
+  <p>
+    <strong>Institution:</strong> Mansoura University<br>
+    <strong>Date:</strong> Jun 2024<br>
+    <strong>Grade:</strong> A+<br>
+    <strong>Link:</strong> 
+    <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_smarthospital-healthcareinnovation-iot-activity-7232824161977401344-6EbU" target="_blank">
+      Project Video
+    </a>
+  </p>
+  <p>
+    Led a multidisciplinary team to design an integrated Smart Hospital System, combining embedded systems, mechanical design, renewable energy, IoT, and PCB layout. I was fully responsible for embedded systems and application development.
+  </p>
+  <ul>
+    <li>🧠 <strong>Embedded Systems:</strong> <p>ATmega32, PWM, SPI, UART, LDRs, sensors, actuators.</p></li>
+    <li>📱 <strong>App & Communication:</strong> <p> Real-time control and alert systems using BLYNK IoT and ESP8266.</p></li>
+    <li>💻 <strong>Tools:</strong> <p>Proteus, Exclipse IDE, GCC, BLYNK IoT, Saleae Logic Analyzer.</p></li>
+  </ul>
+
+  <h3>Subprojects Included:</h3>
+ <ul class="subproject-list">
+  <li>
+    <strong>1. Autonomous Power and Voltage Control System:</strong>
+    <p> Designed to monitor voltage levels and manage power source switching between renewable and backup sources, ensuring energy efficiency and hospital equipment safety.</p>
+     <a href="https://drive.google.com/file/d/19vkXfXCk7wmbn6hm0KdraDvJzMMAIgfZ/view?usp=sharing" target="_blank">
+      Circuit Video 1
+    </a><br/>
+    <a href="https://drive.google.com/file/d/1kdIN6JOOQqQp9gwdolKf63l6us8pXr_0/view?usp=sharing" target="_blank">
+      Circuit Video 2
+    </a>
+  </li>
+  <li>
+    <strong>2. Access Control and Limitation System:</strong>
+    <p>Implemented using IR sensors, DC motors, and microcontrollers to control gate and elevator access, ensuring only authorized personnel can enter sensitive hospital areas.</p>
+     <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_engineering-mechatronics-embeddedsystems-activity-7201962067405205508-o1Rw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y" target="_blank">
+      Circuit Video 1
+    </a><br/>
+     <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_engineering-mechatronics-embeddedsystems-activity-7201962434155147265-VC7S?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y" target="_blank">
+      Circuit Video 2
+    </a>
+  </li>
+  <li>
+    <strong>3. Safety Monitoring and Alarm System:</strong>
+    <p>Real-time detection of smoke, gas leaks, fire, and abnormal temperature using LM35, MQ2, and flame sensors. Triggered alarms and activated fans or water pumps to mitigate hazards.</p>
+     <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_embeddedsystems-microcontrollers-atmega32-activity-7203828261896765441-jI9i?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y" target="_blank">
+      Circuit Video 1
+    </a><br/>
+     <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_embeddedsystems-microcontrollers-atmega32-activity-7203832811701592065-KgOb?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y" target="_blank">
+      Circuit Video 2
+    </a><br/>
+    <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_embeddedsystems-microcontrollers-atmega32-activity-7211166560307073024-9fXt?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y" target="_blank">
+      Circuit Video 3
+    </a>
+  </li>
+  <li>
+    <strong>4. Real-Time Communication and Alert System:</strong>
+    <p>Used ESP8266 to send real-time status and alerts to doctors and administrators through the BLYNK IoT platform, improving emergency response speed.</p>
+      <a href="https://drive.google.com/file/d/1cIK4LhfvrbY6V4GstkTynaeZuTq_GgB2/view?usp=sharing" target="_blank">
+      Circuit Video 1
+    </a>
+  </li>
+  <li>
+    <strong>5. Smart Garage Gate Control System:</strong>
+    <p>Automated parking system using LDR sensors to detect vehicle presence and control gate motors, optimizing hospital parking flow and security.</p>
+  </li>
+  <li>
+    <strong>6. Smart Login and Reservation System:</strong>
+    <p>Developed a secure user authentication and scheduling interface with unique IDs and IP tracking. Unauthorized users are redirected to a fake app for logging intrusions.</p>
+  </li>
+  <a href="https://drive.goohttps://drive.google.com/file/d/11gLNmqA48AVRZaD5_z4P4Tlbefkrlnbc/view?usp=drive_link" target="_blank">
+      Circuit Video 1
+    </a>
+</ul>
+
+</div>
+
+
+    <div class="project-item">
+      <h3>Smart Home  Integration with IoT Application</h3>
+      <p>Developed a Smart Home system with IoT integration, enabling remote control of lighting, security, and appliances through a mobile app. Automated home functions based on environmental conditions and user preferences. <strong>Grade: A+</strong></p>
+      <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_safety-project-renewableenergy-activity-7084344574705303552-Nn9U?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-item">
+      <h3>Calculator System</h3>
+      <p>Developed a microcontroller-based calculator using AVR, featuring real-time arithmetic operations and robust error handling for invalid inputs.</p>
+      <a href="https://drive.google.com/file/d/1UIxmNpLPZQCUUHlTR5sjWmZ3aNUvIm2T/view?usp=sharing">View Project</a>
+    </div>
+
+
+    <div class="project-item">
+      <h3>Clinic Management System</h3>
+      <p>Implemented a C-based clinic management system, allowing admin features like adding and editing patient records, reserving slots, and canceling reservations, along with user features like viewing patient records and reservations.</p>
+      <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_embeddedsystems-clanguage-clinicabrmangementabrsystem-activity-7122718901481713664-b-UK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-item">
+      <h3>Tic Tac Toe Game</h3>
+      <p>Developed an unbeatable Tic Tac Toe game with an AI algorithm for the single-player mode, and multiplayer mode for two players.</p>
+      <a href="https://www.linkedin.com/posts/omar-khaled-4a85aa271_tic-tac-toe-the-game-is-developed-in-activity-7121471829038252032-yvNE?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEJ5PEABloBk-I_pPlzgtOS0jw7eBO_Uh7Y" target="_blank">View Project</a>
+    </div>
+
+      <div class="project-item">
+      <h3>Smart Parking System with Image Processing</h3>
+      <p>Created a parking system leveraging image processing to detect and display real-time availability of parking spaces.</p>
+      
+    </div>
+
+    <div class="project-item">
+      <h3>Image Filtering and Enhancement Tool</h3>
+      <p>Engineered an image processing tool for noise reduction, sharpening, and contrast adjustment to improve visual quality.</p>
+      
+    </div>
+
+
+  </section>
+  
+
+</body>
+</html>

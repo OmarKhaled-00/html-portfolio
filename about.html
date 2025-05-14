@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me - Omar Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #0f0f0f;
+      color: white;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background-color: #0f0f0f;
+      border-bottom: 1px solid #222;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    header h1 {
+      color: #00ffff;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    .about-section {
+      padding: 60px 40px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeInLeft 3s ease;
+      
+    }
+
+    .about-section h2 {
+      font-size: 48px;
+      color: #00ffff;
+      margin-bottom: 20px;
+      text-align: center;
+      
+    }
+
+    .about-section p {
+      font-size: 20px;
+      color: #ccc;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      animation: shineGlow 3s infinite alternate;
+    }
+
+    @keyframes shineGlow {
+      0% {
+        box-shadow: 0 0 5px #00ffff;
+      }
+      50% {
+        box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+      }
+      100% {
+        box-shadow: 0 0 5px #00ffff;
+      }
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="floating">Port<span style="color:white;"><small>folio</small></span></h1>
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUTME</a>
+      <a href="projects.html">PROJECTS</a>
+      <a href="skills.html">SKILLS</a>
+      <a href="Certification.html">CERTIFICATIONS</a>
+      <a href="AI_Knowledge.html">AI KNOWLEDGE</a>
+      <a href="Languages.html">LANGUAGES</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2 class="floating">About Me</h2>
+       <p>
+            <strong>Motivated Embedded Systems Engineer</strong> with a solid foundation in Mechatronics and extensive hands-on experience in IoT application development, embedded systems design, and automation solutions. 
+            Proficient in microcontroller programming (PIC, AVR), hardware design, and seamless system integration, with deep knowledge of communication protocols like SPI, UART, I2C, and CAN/LIN.
+        </p>
+        <p>
+            Skilled in C and C++ programming, real-time system development, and circuit optimization. Successfully led a multidisciplinary team on innovative projects, including a Smart Hospital System, showcasing leadership, technical expertise, and a commitment to excellence.
+        </p>
+        <p>
+            Dedicated to leveraging technical acumen and problem-solving skills to drive advancements in embedded systems engineering.
+        </p>
+        <p>
+            I have also worked for <strong>3 months as an R&D Mechatronics Engineer</strong> and I am currently focusing on <strong>Web Development</strong> to become a full stack developer.
+        </p>
+  </section>
+
+</body>
+</html>
