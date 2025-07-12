@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <title>Omar Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -96,7 +96,7 @@
       animation: bounce 2s infinite;
     }
 
-    
+
     .cv-button {
       display: inline-block;
       padding: 10px 20px;
@@ -106,7 +106,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: background-color 0.3s, color 0.3s;
-       animation: shineGlow 3s infinite alternate;
+      animation: shineGlow 3s infinite alternate;
     }
 
     .cv-button:hover {
@@ -118,39 +118,59 @@
       width: 300px;
       border-radius: 20px;
       box-shadow: 0 0 15px #00ffff;
-        animation: shineGlow 3s infinite alternate;
-    }
-      @keyframes bounce {
-          0%, 100%   { transform: translateY(0); }
-          50%        { transform: translateY(-15px); }
-    }
-    .floating {
-     animation: float 3s ease-in-out infinite;
+      animation: shineGlow 3s infinite alternate;
     }
 
-     @keyframes float {
-          0%   { transform: translateY(0); }
-          50%  { transform: translateY(-10px); }
-          100% { transform: translateY(0); }
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
     }
 
     @keyframes shineGlow {
-  0% {
-    box-shadow: 0 0 5px #00ffff;
-  }
-  50% {
-    box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
-  }
-  100% {
-    box-shadow: 0 0 5px #00ffff;
-  }
-}
+      0% {
+        box-shadow: 0 0 5px #00ffff;
+      }
+
+      50% {
+        box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+      }
+
+      100% {
+        box-shadow: 0 0 5px #00ffff;
+      }
+    }
 
     @keyframes fadeInLeft {
       from {
         opacity: 0;
         transform: translateX(-50px);
       }
+
       to {
         opacity: 1;
         transform: translateX(0);
@@ -162,21 +182,136 @@
         opacity: 0;
         transform: translateX(50px);
       }
+
       to {
         opacity: 1;
         transform: translateX(0);
       }
     }
-  
+
+    /* Responsive Design */
+
+    /* For Tablets */
+    @media (max-width: 1024px) {
+      .hero {
+        flex-direction: column;
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 60px;
+      }
+
+      .hero-text h2 {
+        font-size: 24px;
+      }
+
+      .hero-text p {
+        font-size: 18px;
+      }
+
+      .hero-img img {
+        width: 250px;
+        margin-top: 30px;
+      }
+
+      nav a {
+        margin: 0 10px;
+        font-size: 14px;
+      }
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      color: #00ffff;
+      cursor: pointer;
+      margin-left: 300px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #0f0f0f;
+        border-top: 1px solid #222;
+        margin-top: 10px;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        padding: 10px 20px;
+        margin: 0;
+        border-bottom: 1px solid #222;
+        font-size: 14px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+    }
+
+
+    /* Small Mobile Devices */
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 30px;
+      }
+
+      .hero-text h2 {
+        font-size: 18px;
+      }
+
+      .hero-text p {
+        font-size: 14px;
+      }
+
+      .socials a {
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      .hero-img img {
+        width: 160px;
+      }
+
+      .cv-button {
+        padding: 6px 12px;
+        font-size: 13px;
+      }
+
+      nav a {
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
+
 <body>
 
   <header>
     <h1 class="floating">Port<span style="color:white;"><small>folio</small></span></h1>
-    <nav>
+
+    <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+
+    <nav id="nav-menu">
       <a href="">HOME</a>
-      <a href="about.html" >ABOUTME</a>
+      <a href="about.html">ABOUTME</a>
       <a href="projects.html">PROJECTS</a>
       <a href="skills.html">SKILLS</a>
       <a href="Certification.html">CERTIFICATIONS</a>
@@ -186,6 +321,7 @@
     </nav>
   </header>
 
+
   <section class="hero">
     <div class="hero-text">
       <h2 class="floating">Hello, my name is</h2>
@@ -193,27 +329,36 @@
       <p class="floating"> <b>I'm a</b> <span style="color:#00ffff;">Mechatronics Engineer</span></p>
       <p class="floating"> <b>Specialized</b> <span style="color:#00ffff;">in Embedded systems Engineering</span> </p>
       <p class="floating"><span style="color: #51b477;""><b>Full Stack Web Developer Soon</b></span></p>
-      <div class="socials">
-        <a href="mailto:ok8086143@gmail.com"  target="_blank"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/Unvisable" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/omar-khaled-4a85aa271/"  target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://wa.me/201011281789"  target="_blank"><i class="fab fa-whatsapp"></i></a>
-      </div>
-
-      <a href="./ResumeOmar.pdf" class="cv-button">DOWNLOAD CV</a>
+      <div class=" socials">
+          <a href="mailto:ok8086143@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/Unvisable" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/omar-khaled-4a85aa271/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://wa.me/201011281789" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
-      
-    <div  class="hero-img">
+
+    <a href="./ResumeOmar.pdf" class="cv-button">DOWNLOAD CV</a>
+    </div>
+
+    <div class="hero-img">
       <img src="yourphoto.jpg" alt="Omar Khaled">
     </div>
-   
+
   </section>
- <footer style="background-color: #0f0f0f; color: #ccc; padding: 20px 40px; text-align: center; border-top: 1px solid #222;">
-  <p>&copy; 2025 Omar Khaled. All rights reserved.</p>
-  
-</footer>
+  <footer
+    style="background-color: #0f0f0f; color: #ccc; padding: 20px 40px; text-align: center; border-top: 1px solid #222;">
+    <p>&copy; 2025 Omar Khaled. All rights reserved.</p>
+
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-menu");
+      nav.classList.toggle("active");
+    }
+  </script>
 
 
 </body>
-</html>
 
+</html>
